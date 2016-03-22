@@ -1,0 +1,29 @@
+{
+  "name": "bedrock-authn-password",
+  "version": "0.0.1-dev",
+  "moduleType": [
+    "amd"
+  ],
+  "main": "./password.js",
+  "ignore": [
+    "bedrock/bower.json",
+    "bedrock/bower_components",
+    "bedrock/package.json",
+    "bedrock/pages",
+    "bedrock/prepare",
+    "bedrock/node_modules",
+    "bedrock/selectors",
+    "bedrock/tests",
+    "bedrock/test.js",
+    "bower_components",
+    "lib",
+    "node_modules",
+    "package.json",
+    "views",
+    "tests"
+  ],
+  "dependencies": {
+    "bedrock-angular": "^1.0.0",
+    "bedrock-angular-session": "^1.1.0"
+  }
+}
