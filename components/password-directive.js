@@ -66,6 +66,7 @@ function factory(brAlertService, brPasswordService, config) {
           }
           return scope.callback({identity: identity});
         }).then(function() {
+          scope.loading = false;
           scope.$apply();
         });
     };
