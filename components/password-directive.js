@@ -41,8 +41,6 @@ function factory(brAlertService, brPasswordService, config) {
         .then(function(data) {
           // if a single 'identity' is returned, login was successful
           if(data.identity) {
-            // refresh session information
-            // return brSessionService.get();
             return Promise.resolve(data.identity);
           }
 
