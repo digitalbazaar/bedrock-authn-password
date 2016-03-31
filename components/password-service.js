@@ -6,7 +6,7 @@ define([], function() {
 'use strict';
 
 /* @ngInject */
-function factory($http, brSessionService) {
+function factory($http) {
   var service = {};
 
   service.login = function(authData) {
@@ -15,12 +15,6 @@ function factory($http, brSessionService) {
     return Promise.resolve($http.post('/authn-password/login', authData))
       .then(function(response) {
         return response.data;
-      }).then(function(identity) {
-        // refresh session, ignore error
-        return brSessionService.get()
-          .catch(function() {}).then(function() {
-          return identity;
-        });
       });
   };
 
