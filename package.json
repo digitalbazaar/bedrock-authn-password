@@ -1,0 +1,37 @@
+{
+  "name": "bedrock-authn-password",
+  "version": "0.0.1-dev",
+  "description": "An HTTP for password authentication",
+  "main": "./lib/password.js",
+  "scripts": {
+    "test": "node bedrock/test.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:digitalbazaar/bedrock-authn-password.git"
+  },
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "http://digitalbazaar.com"
+  },
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/bedrock-authn-password/issues"
+  },
+  "homepage": "https://github.com/digitalbazaar/bedrock-authn-password",
+  "dependencies": {
+    "async": "^1.5.2",
+    "bcrypt": "~0.8.5",
+    "bedrock": "^1.0.6",
+    "bedrock-express": "^2.0.0",
+    "bedrock-identity": "^3.0.0",
+    "bedrock-mongodb": "^2.0.0",
+    "bedrock-passport": "^3.0.0",
+    "lodash": "^4.6.1",
+    "passport-local": "^1.0.0"
+  },
+  "peerDependencies": {
+    "bedrock": "^1.0.6",
+    "bedrock-express": "^2.0.0"
+  }
+}
