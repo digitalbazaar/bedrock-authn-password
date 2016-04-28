@@ -3,16 +3,17 @@
  */
 define([
   'angular',
-  './password-directive',
+  './password-component',
   './password-service'
-], function(angular, passwordDirective, passwordService) {
+], function(angular) {
 
 'use strict';
 
 var module = angular.module('bedrock.authn-password', []);
 
-module.directive(passwordDirective);
-module.service(passwordService);
+Array.prototype.slice.call(arguments, 1).forEach(function(register) {
+  register(module);
+});
 
 /* @ngInject */
 module.run(function(brAuthnService) {
