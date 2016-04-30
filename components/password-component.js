@@ -36,7 +36,6 @@ function Ctrl($scope, brAlertService, brPasswordService, config) {
     if(self.sysId) {
       authData.id = self.sysId;
     }
-    console.log('$$$$$$$$$$', authData);
     brPasswordService.login(authData)
       .then(function(data) {
         // if a single 'identity' is returned, login was successful
