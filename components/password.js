@@ -4,12 +4,15 @@
 define([
   'angular',
   './password-component',
+  './password-confirmation-directive',
+  './password-reset-component',
+  './password-reset-view-component',
   './password-service'
 ], function(angular) {
 
 'use strict';
 
-var module = angular.module('bedrock.authn-password', []);
+var module = angular.module('bedrock.authn-password', ['bedrock.alert']);
 
 Array.prototype.slice.call(arguments, 1).forEach(function(register) {
   register(module);

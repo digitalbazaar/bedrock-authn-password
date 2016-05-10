@@ -22,6 +22,14 @@ function factory($http) {
       });
   };
 
+  service.resetPassword = function(options) {
+    // TODO: make URL configurable
+    return Promise.resolve($http.post('/authn-password/reset', options))
+      .then(function(response) {
+        return response.data;
+      });
+  };
+
   return service;
 }
 

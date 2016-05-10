@@ -8,7 +8,7 @@ var schema = {
   title: 'Password',
   description: 'A secure phrase used to protect information.',
   type: 'string',
-  minLength: 6,
+  minLength: 8,
   maxLength: 500,
   errors: {
     invalid: 'The password must be between 6 and 500 characters in length.',
