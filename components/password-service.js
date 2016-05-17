@@ -30,6 +30,11 @@ function factory($http) {
       });
   };
 
+  service.sendPasscode = function(options) {
+    // TODO: make URL configurable
+    return Promise.resolve($http.post('/authn-password/passcode', options));
+  };
+
   return service;
 }
 

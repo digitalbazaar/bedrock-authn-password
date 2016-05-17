@@ -6,6 +6,7 @@ define([
   './password-component',
   './password-confirmation-directive',
   './password-reset-component',
+  './password-reset-request-modal-component',
   './password-reset-view-component',
   './password-service'
 ], function(angular) {

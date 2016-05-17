@@ -21,9 +21,12 @@ function register(module) {
 function Ctrl($scope, brAlertService, brPasswordService, config) {
   var self = this;
   self.loading = false;
-  self.sysIdentifier = null;
-  self.password = null;
   self.multiple = false;
+  self.password = null;
+  self.sysIdentifier = null;
+  self.showModal = {
+    passwordReset: false
+  };
 
   self.login = function() {
     self.loading = true;
@@ -66,6 +69,10 @@ function Ctrl($scope, brAlertService, brPasswordService, config) {
         self.loading = false;
         $scope.$apply();
       });
+  };
+
+  self.sendPasscode = function(options) {
+    brPasswordService.sendPasscode({sysIdentifier: options.sysIdentifier});
   };
 }
 
