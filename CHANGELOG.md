@@ -1,5 +1,10 @@
 # bedrock-authn-password ChangeLog
 
+## 1.2.0 - 2016-05-18
+
+### Added
+- Password reset request modal.
+
 ## 1.1.0 - 2016-05-16
 
 ### Added
