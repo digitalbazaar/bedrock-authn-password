@@ -1,5 +1,10 @@
 # bedrock-authn-password ChangeLog
 
+## 2.0.0 - 2016-05-24
+
+### Changed
+- Update to bedrock-angular-authn 2.0.0 which includes breaking API changes.
+
 ## 1.2.0 - 2016-05-18
 
 ### Added
