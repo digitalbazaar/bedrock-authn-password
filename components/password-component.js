@@ -9,7 +9,7 @@ function register(module) {
   module.component('brAuthnPassword', {
     bindings: {
       sysId: '@brIdentity',
-      callback: '&brCallback'
+      onLogin: '&brOnLogin'
     },
     controller: Ctrl,
     templateUrl:
@@ -64,7 +64,7 @@ function Ctrl($scope, brAlertService, brPasswordService, config) {
         if(!identity) {
           return;
         }
-        return self.callback({identity: identity});
+        return self.onLogin({identity: identity});
       }).then(function() {
         self.loading = false;
         $scope.$apply();
