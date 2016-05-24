@@ -72,7 +72,9 @@ function Ctrl($scope, brAlertService, brPasswordService, config) {
   };
 
   self.sendPasscode = function(options) {
-    brPasswordService.sendPasscode({sysIdentifier: options.sysIdentifier});
+    return brPasswordService.sendPasscode({
+      sysIdentifier: options.sysIdentifier
+    });
   };
 }
 

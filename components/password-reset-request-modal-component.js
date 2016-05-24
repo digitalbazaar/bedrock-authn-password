@@ -23,7 +23,7 @@ function register(module) {
 }
 
 /* @ngInject */
-function Ctrl() {
+function Ctrl($scope, brAlertService) {
   var self = this;
   self.display = {
     requestForm: true,
@@ -32,9 +32,17 @@ function Ctrl() {
   self.title = self.title || 'Forgot your password?';
 
   self.submit = function() {
-    self.modalTitle = 'Request received';
-    _display('requestSubmitted');
-    self.onSubmit({options: {sysIdentifier: self.sysIdentifier}});
+    self.onSubmit({options: {sysIdentifier: self.sysIdentifier}})
+      .then(function(response) {
+        self.modalTitle = 'Request received';
+        _display('requestSubmitted');
+      })
+      .catch(function(err) {
+        brAlertService.add('error', err, {scope: $scope});
+      })
+      .then(function() {
+        $scope.$apply();
+      });
   };
 
   function _display(showProperty) {
