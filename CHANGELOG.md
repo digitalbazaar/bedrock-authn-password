@@ -1,5 +1,8 @@
 # bedrock-authn-password ChangeLog
 
+## 3.0.0 2016-05-25
+- Moved pseudo bower component into bedrock-angular-authn-password.
+
 ## 2.0.0 - 2016-05-24
 
 ### Changed
