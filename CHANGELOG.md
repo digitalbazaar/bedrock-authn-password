@@ -1,5 +1,10 @@
 # bedrock-authn-password ChangeLog
 
+## 3.0.2 - 2016-06-22
+
+### Fixed
+- Only send passcodes/password reset emails to active identities.
+
 ## 3.0.1 - 2016-06-07
 
 ### Changed
