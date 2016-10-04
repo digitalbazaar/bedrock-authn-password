@@ -1,5 +1,10 @@
 # bedrock-authn-password ChangeLog
 
+## 3.0.3 - 2016-10-04
+
+### Fixed
+- Remove unused dependencies.
+
 ## 3.0.2 - 2016-06-22
 
 ### Fixed
