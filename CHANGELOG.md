@@ -1,5 +1,11 @@
 # bedrock-authn-password ChangeLog
 
+## 3.0.4 - 2017-05-11
+
+### Fixed
+- Fix uncaught exception when an identity did not have an assigned password.
+- Fix race condition in legacy password routine.
+
 ## 3.0.3 - 2016-10-04
 
 ### Fixed
