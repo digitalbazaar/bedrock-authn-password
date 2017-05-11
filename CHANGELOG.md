@@ -1,5 +1,11 @@
 # bedrock-authn-password ChangeLog
 
+## 4.0.0 - 2017-05-11
+
+**BREAKING**
+- Removed the `postJoin` validation schema which now resides in
+  `bedrock-website-user-http`.
+
 ## 3.0.5 - 2017-05-11
 
 ### Fixed
