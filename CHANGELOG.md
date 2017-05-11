@@ -1,5 +1,10 @@
 # bedrock-authn-password ChangeLog
 
+## 3.0.5 - 2017-05-11
+
+### Fixed
+- Replace `postJoin` validation schema.
+
 ## 3.0.4 - 2017-05-11
 
 ### Fixed
