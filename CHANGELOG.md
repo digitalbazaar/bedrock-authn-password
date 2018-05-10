@@ -1,5 +1,10 @@
 # bedrock-authn-password ChangeLog
 
+## 4.0.1 - 2018-05-10
+
+### Changed
+- Use `brPermission.checkPermission`.
+
 ## 4.0.0 - 2017-05-11
 
 **BREAKING**
