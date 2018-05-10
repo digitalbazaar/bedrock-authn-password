@@ -1,6 +1,6 @@
 {
   "name": "bedrock-authn-password",
-  "version": "4.0.1-0",
+  "version": "4.0.1",
   "description": "An HTTP API for password authentication",
   "main": "./lib/password.js",
   "scripts": {
