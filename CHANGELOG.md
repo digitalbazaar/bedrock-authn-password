@@ -1,5 +1,11 @@
 # bedrock-authn-password ChangeLog
 
+## 5.0.0 - 2018-09-20
+
+### Changed
+- Update to bcrypt 2.x for Node 10.x compatibility. Those interested in updating
+  to v5.x should look at the bcrypt readme regarding possible breaking changes.
+
 ## 4.0.1 - 2018-05-10
 
 ### Changed
